@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "flat_map": "cpp",
+        "flat_set": "cpp",
+        "string_view": "cpp"
+    }
+}
