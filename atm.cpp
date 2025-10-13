@@ -61,17 +61,17 @@ Text txtMsg("", font, 22); txtMsg.setPosition(200, 350); txtMsg.setFillColor(Col
 enum State { LOGIN, MENU };
 State state = LOGIN;
 tai_khoan* currentUser = nullptr;
-RectangleShape btnBalance(Vector2f(180, 50)); btnBalance.setPosition(260, 100); btnBalance.setFillColor(Color(200,200,255));
-Text txtBalance(L"Xem số dư", font, 24); txtBalance.setPosition(270, 110);
+RectangleShape btnBalance(Vector2f(180, 50)); btnBalance.setPosition(40, 70); btnBalance.setFillColor(Color(200,200,255));
+Text txtBalance(L"Xem số dư", font, 24); txtBalance.setPosition(50, 80);
 
-RectangleShape btnDeposit(Vector2f(180, 50)); btnDeposit.setPosition(260, 180); btnDeposit.setFillColor(Color(200,255,200));
-Text txtDeposit(L"Nạp tiền", font, 24); txtDeposit.setPosition(280, 190);
+RectangleShape btnDeposit(Vector2f(180, 50)); btnDeposit.setPosition(40, 150); btnDeposit.setFillColor(Color(200,255,200));
+Text txtDeposit(L"Nạp tiền", font, 24); txtDeposit.setPosition(50, 160);
 
-RectangleShape btnWithdraw(Vector2f(180, 50)); btnWithdraw.setPosition(260, 260); btnWithdraw.setFillColor(Color(255,200,200));
-Text txtWithdraw(L"Rút tiền", font, 24); txtWithdraw.setPosition(280, 270);
+RectangleShape btnWithdraw(Vector2f(180, 50)); btnWithdraw.setPosition(40, 230); btnWithdraw.setFillColor(Color(255,200,200));
+Text txtWithdraw(L"Rút tiền", font, 24); txtWithdraw.setPosition(50, 230);
 
-RectangleShape btnLogout(Vector2f(180, 50)); btnLogout.setPosition(260, 340); btnLogout.setFillColor(Color(220,220,220));
-Text txtLogout(L"Đăng xuất", font, 24); txtLogout.setPosition(270, 350);
+RectangleShape btnLogout(Vector2f(180, 50)); btnLogout.setPosition(40, 310); btnLogout.setFillColor(Color(220,220,220));
+Text txtLogout(L"Đăng xuất", font, 24); txtLogout.setPosition(50, 320);
 
 float soTien = 0;
 wstring nhapTienMsg;
@@ -171,9 +171,9 @@ while (window.isOpen()) {
         window.draw(btnLogout); window.draw(txtLogout);
         window.draw(txtMsg);
         if (showNhapTien) {
-            RectangleShape boxNhap(Vector2f(200, 40)); boxNhap.setPosition(250, 420); boxNhap.setFillColor(Color::White);
-            Text txtNhap(nhapTienMsg, font, 22); txtNhap.setPosition(250, 380); txtNhap.setFillColor(Color::Black);
-            Text txtSoTien(soTienInput, font, 22); txtSoTien.setPosition(260, 425); txtSoTien.setFillColor(Color::Black);
+            RectangleShape boxNhap(Vector2f(200, 40)); boxNhap.setPosition(400, 200); boxNhap.setFillColor(Color::Black);
+            Text txtNhap(nhapTienMsg, font, 22); txtNhap.setPosition(400, 150); txtNhap.setFillColor(Color::White);
+            Text txtSoTien(soTienInput, font, 22); txtSoTien.setPosition(400, 200); txtSoTien.setFillColor(Color::White);
             window.draw(boxNhap); window.draw(txtNhap); window.draw(txtSoTien);
         }
     }
