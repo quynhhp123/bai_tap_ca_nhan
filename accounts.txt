@@ -1,5 +1,5 @@
 stk,mk,ten,so_du
-1,1,cac,1095.00
+1,1,cac,994.00
 1001,1010,Nguyen Van B,6969.00
 1111222233334444,1234,Nguyen Van A,1000.00
-0000,0000,Test User,0.00
+0000,0000,Test User,100.00
